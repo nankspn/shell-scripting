@@ -183,3 +183,4 @@ case $function_name in
     rocket-start-engine
     rocket-lift-off
     rocket-status
+esac

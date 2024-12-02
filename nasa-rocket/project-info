@@ -1,0 +1,36 @@
+esacbob@caleston-lp10:~$ rocket
+rocket                 rocket-internal-power  rocket-start-power     rocket.vt
+rocket-add             rocket-lift-off        rocket-start-sequence  
+rocket-debug           rocket-ls              rocket-status          
+rocket-del             rocket-start-engine    rocket-test            
+bob@caleston-lp10:~$
+bob@caleston-lp10:~$ rocket
+Please provide a functionality. One of add | start-power | internal-power | start-sequence | start-engine | lift-off | status
+bob@caleston-lp10:~$
+bob@caleston-lp10:~$ rocket -h
+Please input a mission name in the form rocket <mission name>
+eg: rocket add lunar-mission
+bob@caleston-lp10:~$
+bob@caleston-lp10:/usr/local/bin$ ls -l
+total 88
+drwxr-xr-x 1 root root 4096 Apr 15  2020 __pycache__
+-rw-r--r-- 1 root root  244 Jul  3  2020 _test-script.sh
+-rwxr-xr-x 1 root root  267 Apr 15  2020 django-admin
+-rwxr-xr-x 1 root root  125 Apr 15  2020 django-admin.py
+-rwxrwxrwx 1 root root 4149 Jul  3  2020 rocket
+-rwxrwxrwx 1 root root   13 Jul  3  2020 rocket-add
+-rwxrwxrwx 1 root root   15 Jul  3  2020 rocket-debug
+-rwxrwxrwx 1 root root  428 Jul  3  2020 rocket-del
+-rwxrwxrwx 1 root root   24 Jul  3  2020 rocket-internal-power
+-rwxrwxrwx 1 root root   19 Jul  3  2020 rocket-lift-off
+-rwxrwxrwx 1 root root  790 Jul  3  2020 rocket-ls
+-rwxrwxrwx 1 root root   23 Jul  3  2020 rocket-start-engine
+-rwxrwxrwx 1 root root   22 Jul  3  2020 rocket-start-power
+-rwxrwxrwx 1 root root   25 Jul  3  2020 rocket-start-sequence
+-rwxrwxrwx 1 root root   17 Jul  3  2020 rocket-status
+-rwxrwxrwx 1 root root  246 Jul  3  2020 rocket-test
+-rwxrwxrwx 1 root root 1692 Jul  3  2020 rocket.vt
+-rwxr-xr-x 1 root root  220 Apr 15  2020 sqlformat
+-rwxrwxr-x 1 root root 1083 Sep 16 18:14 start-ttyd.sh
+-rwxr-xr-x 1 root root  242 Apr 15  2020 virtualenv
+bob@caleston-lp10:/usr/local/bin$

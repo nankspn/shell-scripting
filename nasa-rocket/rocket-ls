@@ -1,0 +1,56 @@
+print-color() {
+
+  RED='\033[0;31m'
+  GREEN='\033[0;32m'
+  NC='\033[0m' # No Color
+
+  case $1 in
+    red)   COLOR=$RED ;;
+    green) COLOR=$GREEN ;;
+  esac
+
+  printf "${COLOR}$2${NC}"
+}
+
+mission_names=$(ls */status 2> /dev/null | awk -F/ '{print $1}')
+print-color green "\n--------------------------------------------"
+print-color green "\n          ROCKET MISSIONS           "
+print-color green "\n--------------------------------------------\n"
+print-color white "  Name \t\t\t Status"
+print-color green "\n--------------------------------------------\n"
+
+for mission_name in $mission_names
+do
+  mission_status=$(cat $mission_name/status)
+  printf "$mission_name \t\t $mission_status\n"
+done
+
+print-color green "\n          Total Missions - $(echo $mission_names | grep '[^ ]' | wc -w)\n"bob@caleston-lp10:/usr/local/bin$ cat rocket-ls; echo 
+print-color() {
+
+  RED='\033[0;31m'
+  GREEN='\033[0;32m'
+  NC='\033[0m' # No Color
+
+  case $1 in
+    red)   COLOR=$RED ;;
+    green) COLOR=$GREEN ;;
+  esac
+
+  printf "${COLOR}$2${NC}"
+}
+
+mission_names=$(ls */status 2> /dev/null | awk -F/ '{print $1}')
+print-color green "\n--------------------------------------------"
+print-color green "\n          ROCKET MISSIONS           "
+print-color green "\n--------------------------------------------\n"
+print-color white "  Name \t\t\t Status"
+print-color green "\n--------------------------------------------\n"
+
+for mission_name in $mission_names
+do
+  mission_status=$(cat $mission_name/status)
+  printf "$mission_name \t\t $mission_status\n"
+done
+
+print-color green "\n          Total Missions - $(echo $mission_names | grep '[^ ]' | wc -w)\n"
